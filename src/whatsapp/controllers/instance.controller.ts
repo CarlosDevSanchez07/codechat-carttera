@@ -106,7 +106,7 @@ export class InstanceController {
     });
 
     if (!find) {
-      throw new NotFoundException('Instance not found');
+      return { state: 404, message: 'Instance not found' };
     }
 
     try {
