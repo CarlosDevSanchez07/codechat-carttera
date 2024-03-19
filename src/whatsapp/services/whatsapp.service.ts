@@ -523,6 +523,7 @@ export class WAStartupService {
       qrTimeout: EXPIRATION_TIME * 1000,
       emitOwnEvents: true,
       msgRetryCounterCache: this.msgRetryCounterCache,
+      defaultQueryTimeoutMs: undefined,
       getMessage: this.getMessage as any,
       generateHighQualityLinkPreview: true,
       syncFullHistory: true,

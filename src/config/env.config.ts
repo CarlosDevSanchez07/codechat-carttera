@@ -198,7 +198,7 @@ export class ConfigService {
         LIMIT: Number.parseInt(process.env?.QRCODE_LIMIT || '10'),
         EXPIRATION_TIME: Number.parseInt(process.env?.QRCODE_EXPIRATION_TIME || '60'),
       },
-      CONNECTION_TIMEOUT: Number.parseInt(process.env?.CONNECTION_TIMEOUT || '300'),
+      CONNECTION_TIMEOUT: Number.parseInt(process.env?.CONNECTION_TIMEOUT || '3000'),
       AUTHENTICATION: {
         GLOBAL_AUTH_TOKEN: process.env.AUTHENTICATION_GLOBAL_AUTH_TOKEN,
         JWT: {
